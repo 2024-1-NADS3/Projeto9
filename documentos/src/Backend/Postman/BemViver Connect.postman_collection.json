@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "1000b7f3-2594-4ae9-814e-328af8b5bf48",
+		"name": "BemViver Connect",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20301281"
+	},
+	"item": [
+		{
+			"name": "BuscarUsuarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/buscarUsuarios",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"buscarUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarTarefas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/buscarTarefas",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"buscarTarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterTarefasAtivas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/obterTarefasAtivas/11",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"obterTarefasAtivas",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterTarefasFinalizadas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/obterTarefasFinalizadas/11",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"obterTarefasFinalizadas",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DadosUsuario",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/dadosUsuario/1",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"dadosUsuario",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObterTarefas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_usuario\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/obterTarefas",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"obterTarefas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Teste\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"senha\" : \"123\",\r\n    \"humor\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/cadastrarUsuario",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"cadastrarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastrarTarefa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_usuario\": 1,\r\n    \"nome_tarefa\": \"Estudar\",\r\n    \"data_hora\": \"2024-05-24 10:30\",\r\n    \"status\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/cadastrarTarefa",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"cadastrarTarefa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletarTarefa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/deletarTarefa",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"deletarTarefa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"teste@gmail.com\",\r\n    \"senha\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/login",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuantidadeTarefas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/quantidadeTarefas/1",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"quantidadeTarefas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"teste@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/buscarId",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"buscarId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/atualizarUsuario/1/2",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"atualizarUsuario",
+						"1",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/atualizarStatus/1/0",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"atualizarStatus",
+						"1",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarHumor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qy5dwc-3000.csb.app/buscarHumor",
+					"protocol": "https",
+					"host": [
+						"qy5dwc-3000",
+						"csb",
+						"app"
+					],
+					"path": [
+						"buscarHumor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
